@@ -1,14 +1,13 @@
-<html>
-<head>
-    <title>
+{% extends 'base.html' %}
+{% block page_title %}
         All Challenges
-    </title>
-</head>
-<body>
+{% endblock  %}
+
+{% block content %}
+{% include "./include/header.html" with active_page="index" %}
 <ul>
     {% for month in months  %}
     <li><a href="{% url 'challenges-tushar' month %}">{{ month|title }}</a></li>
     {% endfor %}
 </ul>
-</body>
-    </html>
+{% endblock content %}

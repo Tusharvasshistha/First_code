@@ -17,7 +17,7 @@ Monthly_challengess = {
     "sept" : "hello sept",
     "oct" : "hello oct",
     "nov" : "hello nov",
-    "dec" : "hello dec"
+    "dec" : None
 }
 
 def index(request):
